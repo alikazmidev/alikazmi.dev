@@ -1,0 +1,141 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text color */
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Container */
+  .container {
+    max-width: 900px;
+    width: 100%;
+    padding: 40px;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #1a1a1a, #0f0f0f); /* Gradient dark background */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  .container:hover {
+    box-shadow: 0 12px 50px rgba(0, 0, 0, 0.25);
+  }
+  
+  /* Header */
+  .header {
+    margin-bottom: 30px;
+  }
+  
+  .logo {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ffffff; /* White text for logo */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  
+  .sub-heading {
+    font-size: 1.2rem;
+    color: #a0a0a0; /* Light grey for sub-heading */
+    margin-top: 10px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* Sections */
+  main {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #e0e0e0; /* Light text color */
+  }
+  
+  h2 {
+    color: #ffffff; /* White color for headings */
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  ul li {
+    margin-bottom: 15px;
+  }
+  
+  strong {
+    color: #0071e3; /* Blue accent color */
+    font-weight: 600;
+  }
+  
+  /* Contact Section */
+  .contact {
+    margin-top: 40px;
+  }
+  
+  .contact p {
+    font-size: 1.2rem;
+    color: #a0a0a0; /* Light grey text for contact section */
+    font-weight: 500;
+  }
+  
+  /* Footer Styling */
+  .footer {
+    margin-top: 50px;
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .footer-link {
+    color: #0071e3; /* Blue accent color for links */
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-link:hover {
+    color: #005bb5; /* Darker blue on hover */
+  }
+  
+  /* Subtle Animations */
+  h2, ul li {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s ease-in-out forwards;
+  }
+  
+  h2 {
+    animation-delay: 0.3s;
+  }
+  
+  ul li {
+    animation-delay: 0.5s;
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
